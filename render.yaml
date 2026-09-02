@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: dusty-tape-api
+    env: docker
+    region: singapore
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeploy: true
